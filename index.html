@@ -7,18 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculo IMC</title>
     <style>
-       * {
-  font-size: 25px;
-  font-weight: 600 ;
-  margin: 20px;
-}
+        * {
+            font-size: 20px;
+        }
 
-body {
-  font-family: Montserrat, sans-serif;
-  background-color:aliceblue
-}
+        body {
+            font-weight: 1000;
+            font-family: Montserrat, sans-serif;
+            background-color: aliceblue;
+            line-height: 3;
+        }
 
-
+        input {
+            align-items: center;
+            display: flex;
+            justify-content: space-around;
+            width: 200px;
+        }
     </style>
 </head>
 
@@ -26,27 +31,30 @@ body {
     <form action="">
         <div>
             <label for="resultado">Gênero: </label>
-            <select id="genero">
-                <option value="Masculino">Masculino</option>
-                <option value="Feminino">Feminino</option>
-            </select>
-           
+            <input type="text" id="genero">
+
+            <button id="submitGender">
+                submitGender
+            </button>
+
+
         </div>
         <div>
             <label for="peso">Digite seu peso em Kg:</label>
-            <input max="500" min="0"  type="number" id="peso">
+            <input max="500" min="0" type="number" id="peso">
         </div>
         <div>
             <label for="altura">Digite sua altura em cm:</label>
             <input max="260" type="number" id="altura">
         </div>
-        <div> Valor do IMC = <input id="resultado"> </div>
+        <div> Valor do IMC = <p id="resultadoIMC"></p>
+        </div>
         <div> <button id='calcular'>Calcular IMC</button> </div>
         <div>
-            <p id="resultadoImc"></p>
+
         </div>
     </form>
-    <script src="Text.js"></script>
+    <script defer src="Text.js"></script>
 </body>
 
 </html>
