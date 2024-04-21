@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo IMC</title>
+    <style>
+       * {
+  font-size: 25px;
+  font-weight: 600 ;
+  margin: 20px;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  background-color:aliceblue
+}
+
+
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <div>
+            <label for="resultado">Gênero: </label>
+            <select id="genero">
+                <option value="Masculino">Masculino</option>
+                <option value="Feminino">Feminino</option>
+            </select>
+           
+        </div>
+        <div>
+            <label for="peso">Digite seu peso em Kg:</label>
+            <input max="500" min="0"  type="number" id="peso">
+        </div>
+        <div>
+            <label for="altura">Digite sua altura em cm:</label>
+            <input max="260" type="number" id="altura">
+        </div>
+        <div> Valor do IMC = <input id="resultado"> </div>
+        <div> <button id='calcular'>Calcular IMC</button> </div>
+        <div>
+            <p id="resultadoImc"></p>
+        </div>
+    </form>
+    <script src="Text.js"></script>
+</body>
+
+</html>
