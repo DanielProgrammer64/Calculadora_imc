@@ -8,7 +8,7 @@
     <title>Calculo IMC</title>
     <style>
         * {
-            font-size: 20px;
+            font-size: 25px;
         }
 
         body {
@@ -22,7 +22,12 @@
             align-items: center;
             display: flex;
             justify-content: space-around;
-            width: 200px;
+            width: 250px;
+        }
+
+        form {
+            margin-left: 760px;
+            margin-top: 150px;
         }
     </style>
 </head>
@@ -31,12 +36,11 @@
     <form action="">
         <div>
             <label for="resultado">Gênero: </label>
-            <input type="text" id="genero">
-
-            <button id="submitGender">
-                submitGender
-            </button>
-
+            <select type="text" id="genero">
+                <option> indefinido </option>
+                <option value="Masculino"> Masculino </option>
+                <option value="Feminino"> Feminino </option>
+            </select>
 
         </div>
         <div>
@@ -55,6 +59,7 @@
         </div>
     </form>
     <script defer src="Text.js"></script>
+    <script defer src="buscandoCategorias.js"></script>
 </body>
 
 </html>
