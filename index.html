@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculo IMC</title>
     <style>
+        @media only screen and (min-width: 1025px) {
+            /* Estilos para telas maiores que 1025px de largura */
+        }
+
         * {
             font-size: 25px;
         }
@@ -51,15 +55,14 @@
             <label for="altura">Digite sua altura em cm:</label>
             <input max="260" type="number" id="altura">
         </div>
-        <div> Valor do IMC = <p id="resultadoIMC"></p>
+        <div> Valor do IMC: 
+            <p id="resultado"> </p>
         </div>
-        <div> <button id='calcular'>Calcular IMC</button> </div>
-        <div>
+         <button id='calcular'>Calcular IMC</button> 
 
-        </div>
     </form>
     <script defer src="Text.js"></script>
-    <script defer src="buscandoCategorias.js"></script>
+
 </body>
 
 </html>
